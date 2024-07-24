@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 
+.cardWrapper {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* height: 200px; */
+}
+
+.layer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(0, 0, 255, 1);
+  width: 80%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  
+  /* display: none; */
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
