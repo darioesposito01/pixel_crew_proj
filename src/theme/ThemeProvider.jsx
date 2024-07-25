@@ -25,15 +25,16 @@ const theme = createTheme({
       },
     body1:{
         fontFamily: 'CustomFont',
-        fontWeight:'bold'
+        // fontWeight:'bold'
     },
     body2:{
         fontFamily: 'CustomFont',
-        fontWeight:'bold'
+        
+        // fontWeight:'bold'
     },
     subtitle1:{
         fontFamily: 'CustomFont',
-        fontWeight:'bold'
+        // fontWeight:'bold'
     },
   
   },

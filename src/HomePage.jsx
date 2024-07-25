@@ -7,6 +7,7 @@ import { Container } from '@mui/material';
 import PlanetarioSection from './Components/PlanetarioSection';
 import NovitaBottegaSection from './Components/NovitaSection';
 import NewsletterSubscription from './Components/NewsletterSubscription';
+import Footer from './Components/Footer';
 
 const SoulFarmHomepage = () => {
   return (
@@ -19,6 +20,7 @@ const SoulFarmHomepage = () => {
         <PlanetarioSection/>
         <NovitaBottegaSection/>
         <NewsletterSubscription/>
+        <Footer/>
     </div>
   );
 };

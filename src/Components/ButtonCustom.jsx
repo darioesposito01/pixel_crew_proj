@@ -16,7 +16,7 @@ const ButtonCustom = ({children}) =>{
         textTransform:'none',
     }}
     >
-        <Typography>
+        <Typography sx={{fontWeight:'normal', fontSize:12}}>
         {children}
         </Typography>
     </Button>

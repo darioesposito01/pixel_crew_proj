@@ -73,8 +73,8 @@ button:focus-visible {
 
 @font-face {
   font-family: 'CustomFont';
-  src: url('./fonts/Fontspring-DEMO-moranga-boldit-iF663c8d967e73c.otf') format('otf');
-  font-weight: bolder;
+  src: url('./fonts/Bogue.ttf') format('truetype');
+  /* font-weight: bolder; */
 }
 
 :root {

@@ -7,8 +7,9 @@ import Button from '@mui/material/Button';
 
 
 import Frame from '../assets/Frame.png'; 
+import { Typography } from '@mui/material';
 
-const pages = ['Azienda agricola', 'Fattoria didattica', 'Agriturismo', 'Bio e sostenibilità', 'Turismo e territorio', 'Area clienti'];
+const pages = ['Azienda agricola', 'Fattoria didattica', 'Agriturismo', 'Bio e sostenibilità', 'Turismo e territorio', 'Dove siamo'];
 
 const Navbar = () => {
 
@@ -23,9 +24,11 @@ const Navbar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                sx={{ color: 'white', display: 'block' }}
+                sx={{ color: 'white', display: 'block', mx:1 }}
               >
+                <Typography textTransform={'none'} sx={{fontSize:14}}>
                 {page}
+                </Typography>
               </Button>
             ))}
           </Box>
