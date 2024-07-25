@@ -70,13 +70,14 @@ button:focus-visible {
 } */
 
 
-
 @font-face {
   font-family: 'CustomFont';
   src: url('./fonts/Bogue.ttf') format('truetype');
-  /* font-weight: bolder; */
+ 
 }
 
-:root {
-  font-family: 'CustomFont';
+@font-face {
+  font-family: 'ButterFont';
+  src: url('./fonts/Butter-Regular.ttf') format('truetype');
+  /* font-weight: bolder; */
 }

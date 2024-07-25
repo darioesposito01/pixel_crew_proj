@@ -36,6 +36,10 @@ const theme = createTheme({
         fontFamily: 'CustomFont',
         // fontWeight:'bold'
     },
+    caption:{
+        fontFamily: 'ButterFont',
+        
+    }
   
   },
 });

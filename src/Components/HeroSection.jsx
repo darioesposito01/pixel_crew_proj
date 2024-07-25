@@ -7,7 +7,7 @@ import headerbg from '../assets/headerbg.png';
 
 
 const HeroContainer = styled(Box)(({ theme }) => ({
-  height: '80vh',
+  height: '90vh',
   backgroundImage: `url(${headerbg})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
@@ -22,7 +22,7 @@ const ContentBox = styled(Box)(({ theme }) => ({
     // backdropFilter: 'blur(10px)',
     padding: theme.spacing(4),
     width: '50%',
-    height: '80vh',
+    height: '90vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

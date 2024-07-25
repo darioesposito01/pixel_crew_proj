@@ -60,7 +60,7 @@ const EventCard = ({ event }) => (
         }}
       />
       <div className="layer">
-           <Typography variant='h5' textAlign={'center'}>{event.title}</Typography>
+           <Typography variant='caption' fontSize={18} textAlign={'center'}>{event.title}</Typography>
            <Typography fontSize={10} textAlign={'center'}>{event.subtitle}</Typography>
           </div>
       </div>

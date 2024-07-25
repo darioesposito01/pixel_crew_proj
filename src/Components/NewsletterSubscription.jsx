@@ -11,7 +11,7 @@ const NewsletterSubscription = () => {
     <Box
       sx={{
         position: 'relative',
-        borderRadius:7,
+        borderRadius:5,
         height: '500px',
         backgroundImage: `url(${capanno})`,
         backgroundSize: 'cover',
@@ -30,7 +30,7 @@ const NewsletterSubscription = () => {
           right: 0,
           bottom: 0,
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          borderRadius: 7
+          borderRadius: 5
         },
       }}
     >

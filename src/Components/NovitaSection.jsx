@@ -56,7 +56,7 @@ const NovitaBottegaSection = () => {
       <Typography variant="h4" component="h2" align="center" gutterBottom>
         Le novità in bottega
       </Typography>
-      <Typography variant="subtitle1" align="center" sx={{ mb: 4 }}>
+      <Typography variant="subtitle1" align="center" sx={{ mb: 4}}>
         Nella cucina professionale/laboratorio multifunzionale (internamente allimentata e corrente) che è stato allestito
       </Typography>
       </>
@@ -127,7 +127,7 @@ const NovitaBottegaSection = () => {
                 }}
               />
               <CardContent sx={{ px: 2, py: 0 }}>
-                <Typography sx={{ mb: 1 }} variant="h7" component="div">
+                <Typography sx={{ mb: 1, fontSize:13 }} variant="h7"  component="div">
                   {product.name}
                 </Typography>
                 <ButtonCustom>

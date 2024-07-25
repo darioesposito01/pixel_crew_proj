@@ -8,7 +8,10 @@ const ButtonCustom = ({children}) =>{
     <Button
     
     sx={{
-        backgroundColor:'#D1F864',
+        backgroundColor:'rgba(209, 248,100,1)',
+        ':hover':{
+            backgroundColor:'rgba(209, 248,100,0.7)'
+        },
         borderRadius:10,
         color:'black',
         paddingX:2,
