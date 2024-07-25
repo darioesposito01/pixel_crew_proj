@@ -2,10 +2,10 @@ import React from 'react';
 import { Box, Typography, Container, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-// Importa l'immagine di sfondo
+
 import headerbg from '../assets/headerbg.png';
 
-// Styled component per il contenitore principale
+
 const HeroContainer = styled(Box)(({ theme }) => ({
   height: '80vh',
   backgroundImage: `url(${headerbg})`,
@@ -16,7 +16,7 @@ const HeroContainer = styled(Box)(({ theme }) => ({
   color: 'white',
 }));
 
-// Styled component per il box del contenuto con sfondo sfocato
+
 const ContentBox = styled(Box)(({ theme }) => ({
     // backgroundColor: 'rgba(255, 255, 255, 0.7)',
     // backdropFilter: 'blur(10px)',
@@ -36,17 +36,17 @@ const HeroSection = () => {
     <HeroContainer>
       
         <ContentBox elevation={3}>
-          <Typography variant="h2" component="h1" gutterBottom color="primary">
+          <Typography variant="h1" component="h1" fontWeight={'bold'}  color="#4CB973">
             Soulfarm
           </Typography>
-          <Typography variant="h4" gutterBottom color="secondary">
+          <Typography variant="h1" fontWeight={'bold'} color="black">
             Agricoltura
           </Typography>
-          <Typography variant="h4" gutterBottom color="secondary">
+          <Typography variant="h1"  fontWeight={'bold'} color="black">
             Familiare
           </Typography>
-          <Typography variant="body1" paragraph>
-            L'azienda è certificata biologica ed è composta da orto, frutteto e...
+          <Typography maxWidth={250} variant="body1"  paragraph color={'black'}>
+            L'azienda è certificata biologica ed è composta da orto, frutteto e pascolo
           </Typography>
         </ContentBox>
       

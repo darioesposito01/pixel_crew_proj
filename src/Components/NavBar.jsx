@@ -13,7 +13,7 @@ const pages = ['Azienda agricola', 'Fattoria didattica', 'Agriturismo', 'Bio e s
 const Navbar = () => {
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#2e7d32' }}>
+    <AppBar position="static" sx={{ backgroundColor: '#216545' }}>
       <Container maxWidth="xl">
       <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>

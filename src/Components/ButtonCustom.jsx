@@ -1,8 +1,9 @@
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import React from "react";
 
 
 const ButtonCustom = ({children}) =>{
+
     return(
     <Button
     
@@ -12,11 +13,12 @@ const ButtonCustom = ({children}) =>{
         color:'black',
         paddingX:2,
         paddingY:1,
-        textTransform:'none'
-        
+        textTransform:'none',
     }}
     >
+        <Typography>
         {children}
+        </Typography>
     </Button>
     )
 }

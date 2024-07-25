@@ -13,6 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -66,3 +68,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./fonts/Fontspring-DEMO-moranga-boldit-iF663c8d967e73c.otf') format('otf');
+  font-weight: bolder;
+}
+
+:root {
+  font-family: 'CustomFont';
+}

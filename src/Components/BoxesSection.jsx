@@ -53,7 +53,6 @@ const EventCard = ({ event }) => (
       <CardMedia
         component="img"
         alt="green iguana"
-        
         image={event.image}
         sx={{
             borderRadius:4,
@@ -61,8 +60,8 @@ const EventCard = ({ event }) => (
         }}
       />
       <div className="layer">
-           <p>{event.title}</p>
-           <p>{event.subtitle}</p>
+           <Typography variant='h5' textAlign={'center'}>{event.title}</Typography>
+           <Typography fontSize={10} textAlign={'center'}>{event.subtitle}</Typography>
           </div>
       </div>
       <CardContent>
@@ -81,7 +80,7 @@ const EventCard = ({ event }) => (
 const EventCardsSection = () => {
   return (
     <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
-    <Grid container spacing={3} sx={{marginTop: -10}}>
+    <Grid container spacing={3} sx={{marginTop: -15, marginBottom:5}}>
       {events.map((event, index) => (
         <Grid item xs={12} sm={6} md={4} key={index}>
           <EventCard event={event} />
