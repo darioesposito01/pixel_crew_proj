@@ -3,7 +3,8 @@ import { Box, Typography, Card, CardContent, CardMedia, IconButton, Grid } from 
 import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 
 import small_image from '../assets/small_image.png';
-import ButtonCustom from './ButtonCustom';
+import useScrollControl from '../hooks/useScrollControl';
+import ProductCard from './ProductCard';
 
 const products = [
   { id: 1, name: 'Mele di bosco', image: small_image },
@@ -21,33 +22,7 @@ const products = [
 
 const NovitaBottegaSection = () => {
   const scrollContainerRef = useRef(null);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
-
-  const handleScroll = () => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      setShowLeftArrow(container.scrollLeft > 0);
-      setShowRightArrow(
-        container.scrollLeft < container.scrollWidth - container.clientWidth
-      );
-    }
-  };
-
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.addEventListener('scroll', handleScroll);
-      return () => container.removeEventListener('scroll', handleScroll);
-    }
-  }, []);
-
-  const scroll = (scrollOffset) => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.scrollBy({ left: scrollOffset, behavior: 'smooth' });
-    }
-  };
+  const { showLeftArrow, showRightArrow, scroll } = useScrollControl(scrollContainerRef);
 
   return (
     <Box sx={{ py: 6, px: 2, bgcolor: '#F4F4F4' }}>
@@ -104,38 +79,11 @@ const NovitaBottegaSection = () => {
             scrollbarWidth: 'none',
             '&::-webkit-scrollbar': { display: 'none' },
             mx: -1,
-            marginLeft:3
+            paddingLeft:3
           }}
         >
           {products.map((product) => (
-            <Card key={product.id} elevation={0} sx={{ 
-              flexShrink: 0,
-              width: 180, 
-              height: 240, 
-              mx: 1,
-              borderRadius: 3, 
-              bgcolor: 'white', 
-              pb: 1
-            }}>
-              <CardMedia
-                component="img"
-                image={product.image}
-                alt={product.name}
-                sx={{
-                  p: 2,
-                  borderRadius: 6,
-                  height: '65%'
-                }}
-              />
-              <CardContent sx={{ px: 2, py: 0 }}>
-                <Typography sx={{ mb: 1, fontSize:13 }} variant="h7"  component="div">
-                  {product.name}
-                </Typography>
-                <ButtonCustom>
-                  Scopri di più
-                </ButtonCustom>
-              </CardContent>
-            </Card>
+              <ProductCard key={product.id} product={product} />
           ))}
         </Box>
       </Box>

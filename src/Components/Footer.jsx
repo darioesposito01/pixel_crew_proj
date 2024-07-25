@@ -43,9 +43,9 @@ const Footer = () => {
             <Typography variant="h6" sx={{ color: '#d4ff63' }} gutterBottom>
               AGRITURISMO
             </Typography>
-            <Typography variant="body2">BIO E SOSTENIBILITÀ</Typography>
-            <Typography variant="body2">TURISMO E TERRITORIO</Typography>
-            <Typography variant="body2">CONTATTI</Typography>
+            <Typography sx={{ color: '#d4ff63' }}  variant="body2">BIO E SOSTENIBILITÀ</Typography>
+            <Typography sx={{ color: '#d4ff63' }}  variant="body2">TURISMO E TERRITORIO</Typography>
+            <Typography sx={{ color: '#d4ff63' }}  variant="body2">CONTATTI</Typography>
             </Stack>
           </Grid>
           <Box>
