@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Button, Container, Grid } from '@mui/material';
 
 import planetario from '../assets/planetario.png';
+import sfondo_verde from '../assets/sfondo_verde.png';
 import ButtonCustom from './ButtonCustom';
 
 
@@ -10,11 +11,19 @@ const PlanetarioSection = () => {
   return (
     <Box
       sx={{
-        backgroundColor: '#1E5D3F',
+        display:'flex',
+        backgroundColor: '#216545',
         marginTop:5,
         paddingY:10,
-        
+        backgroundImage: `url(${sfondo_verde})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        position: 'relative',
+        height:'55vh',
+        alignItems:'center'
       }}
+      
     >
       <Container>
         <Grid container spacing={4} alignItems="center">

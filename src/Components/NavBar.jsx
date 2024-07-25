@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#216545' }}>
-      <Container maxWidth="xl">
+      <Container maxWidth={false}>
       <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <img src={Frame} alt="Soul Farm Logo" style={{ height: '40px' }} />

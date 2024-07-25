@@ -104,6 +104,7 @@ const NovitaBottegaSection = () => {
             scrollbarWidth: 'none',
             '&::-webkit-scrollbar': { display: 'none' },
             mx: -1,
+            marginLeft:3
           }}
         >
           {products.map((product) => (
@@ -112,7 +113,7 @@ const NovitaBottegaSection = () => {
               width: 180, 
               height: 240, 
               mx: 1,
-              borderRadius: 5, 
+              borderRadius: 3, 
               bgcolor: 'white', 
               pb: 1
             }}>

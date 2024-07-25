@@ -13,36 +13,42 @@ const events = [
     subtitle: 'PLANETARIO DI CASTELNUOVO SCRIVIA',
     image: small_image,
     cardTitle: 'Sabato in Planetario',
+    bgcolor: 'rgba(16, 35, 78, 0.8)'
   },
   {
     title: 'Momenti di Agri-creatività',
     subtitle: 'ELILU AGRICULTURA FAMILIARE',
     image: small_image,
     cardTitle: 'Momenti di Agri-creatività',
+    bgcolor: 'rgba(236, 136, 74, 0.8)'
   },
   {
     title: 'Ruota dell\'Anno Celtico',
     subtitle: 'AGRITURISMO MANGIA\' AD CAMPAGNA E WILD TREK',
     image: small_image,
     cardTitle: 'Ruota dell\'Anno Celtico',
+    bgcolor: 'rgba(179, 79, 38, 0.8)'
   },
   {
     title: 'Preparazioni',
     subtitle: 'AGRITURISMO MANGIA\' AD CAMPAGNA ED ELILU',
     image: small_image,
     cardTitle: 'Sabato in Planetario',
+    bgcolor: 'rgba(164, 140, 101, 0.8)'
   },
   {
     title: 'Preparazioni',
     subtitle: 'AGRITURISMO MANGIA\' AD CAMPAGNA ED ELILU',
     image: small_image,
     cardTitle: 'Momenti di Agri-creatività',
+    bgcolor: 'rgba(164, 140, 101, 0.8)'
   },
   {
-    title: 'Corso Base di Astronomia',
+    title: 'Ruota dell\'Anno Celtico',
     subtitle: 'PLANETARIO DI CASTELNUOVO SCRIVIA',
     image: small_image,
     cardTitle: 'Ruota dell\'Anno Celtico',
+    bgcolor: 'rgba(55, 21, 54, 0.8)'
   },
 ];
 
@@ -59,18 +65,17 @@ const EventCard = ({ event }) => (
             objectFit:'contain'
         }}
       />
-      <div className="layer">
-           <Typography variant='caption' fontSize={18} textAlign={'center'}>{event.title}</Typography>
-           <Typography fontSize={10} textAlign={'center'}>{event.subtitle}</Typography>
+      <div style={{backgroundColor: event.bgcolor }} className="layer">
+           <Typography color={'white'}  variant='caption' fontSize={18} textAlign={'center'}>{event.title}</Typography>
+           <Typography color={'white'} fontSize={10} textAlign={'center'}>{event.subtitle}</Typography>
           </div>
       </div>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        <Typography gutterBottom variant="h6" component="div">
+          {event.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        L’azienda è certificata biologica ed è composta da orto, frutteto e pascolo, colture cerealicole, vigneto e medicaio.
         </Typography>
       </CardContent>
     </Card>
@@ -88,7 +93,7 @@ const EventCardsSection = () => {
       ))}
     </Grid>
       <ButtonCustom>
-        Scopri Tutti gli eventi
+        Scopri tutti gli eventi
       </ButtonCustom>
       </div>
   );
