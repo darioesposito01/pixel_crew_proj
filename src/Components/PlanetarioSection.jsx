@@ -27,7 +27,7 @@ const PlanetarioSection = () => {
     >
       <Container>
         <Grid container spacing={4} alignItems="center">
-          <Grid item xs={12} md={6}>
+          <Grid item xs={6} md={6}>
             <Box
               sx={{
                 borderRadius: '16px',
@@ -44,7 +44,7 @@ const PlanetarioSection = () => {
               <img src={planetario} alt="Il Planetario" />
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={6} md={6}>
             <Typography variant="h3" component="h2" gutterBottom sx={{ color: 'white' }}>
               Il Planetario
             </Typography>
