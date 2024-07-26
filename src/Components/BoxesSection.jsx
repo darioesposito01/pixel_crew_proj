@@ -44,7 +44,7 @@ const events = [
     bgcolor: 'rgba(164, 140, 101, 0.8)'
   },
   {
-    title: 'Ruota dell\'Anno Celtico',
+    title: 'Corso Base di Astronomia',
     subtitle: 'PLANETARIO DI CASTELNUOVO SCRIVIA',
     image: small_image,
     cardTitle: 'Ruota dell\'Anno Celtico',
@@ -66,13 +66,13 @@ const EventCard = ({ event }) => (
         }}
       />
       <div style={{backgroundColor: event.bgcolor}} className="layer">
-           <Typography sx={{marginBottom:1}} color={'white'}  variant='caption' fontSize={23}  textAlign={'center'}>{event.title}</Typography>
+           <Typography sx={{marginBottom:1, fontWeight:'bold'}} color={'white'}  variant='caption' fontSize={25}  textAlign={'center'}>{event.title}</Typography>
            <Typography color={'white'} fontSize={10} textAlign={'center'}>{event.subtitle}</Typography>
           </div>
       </div>
       <CardContent>
         <Typography gutterBottom variant="h6" component="div">
-          {event.title}
+          {event.cardTitle}
         </Typography>
         <Typography variant="body2" color="text.secondary">
         L’azienda è certificata biologica ed è composta da orto, frutteto e pascolo, colture cerealicole, vigneto e medicaio.
