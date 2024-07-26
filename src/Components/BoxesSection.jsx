@@ -65,8 +65,8 @@ const EventCard = ({ event }) => (
             objectFit:'contain'
         }}
       />
-      <div style={{backgroundColor: event.bgcolor }} className="layer">
-           <Typography color={'white'}  variant='caption' fontSize={23} textAlign={'center'}>{event.title}</Typography>
+      <div style={{backgroundColor: event.bgcolor}} className="layer">
+           <Typography sx={{marginBottom:1}} color={'white'}  variant='caption' fontSize={23}  textAlign={'center'}>{event.title}</Typography>
            <Typography color={'white'} fontSize={10} textAlign={'center'}>{event.subtitle}</Typography>
           </div>
       </div>
