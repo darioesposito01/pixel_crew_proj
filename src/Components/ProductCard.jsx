@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => (
     <Card elevation={0} sx={{
       flexShrink: 0,
       width: 180, 
-      height: 240, 
+      height: 220, 
       mx: 1,
       borderRadius: 3, 
       bgcolor: 'white', 

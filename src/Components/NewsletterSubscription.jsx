@@ -12,7 +12,7 @@ const NewsletterSubscription = () => {
       sx={{
         position: 'relative',
         borderRadius:5,
-        height: '500px',
+        height: '400px',
         backgroundImage: `url(${capanno})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',

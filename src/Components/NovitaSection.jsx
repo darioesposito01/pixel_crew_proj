@@ -25,7 +25,7 @@ const NovitaBottegaSection = () => {
   const { showLeftArrow, showRightArrow, scroll } = useScrollControl(scrollContainerRef);
 
   return (
-    <Box sx={{ py: 6, px: 2, bgcolor: '#F4F4F4' }}>
+    <Box sx={{ py: 8, px: 2, bgcolor: '#F4F4F4' }}>
     <Box sx={{position:'relative'}}>
         <>
       <Typography variant="h4" component="h2" align="center" gutterBottom>
