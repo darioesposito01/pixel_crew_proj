@@ -12,14 +12,11 @@ const HeroContainer = styled(Box)(({ theme }) => ({
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',
-//   alignItems: 'stretch',
   color: 'white',
 }));
 
 
 const ContentBox = styled(Box)(({ theme }) => ({
-    // backgroundColor: 'rgba(255, 255, 255, 0.7)',
-    // backdropFilter: 'blur(10px)',
     padding: theme.spacing(4),
     width: '50%',
     height: '90vh',
