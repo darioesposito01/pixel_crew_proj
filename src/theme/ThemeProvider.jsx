@@ -24,16 +24,16 @@ const theme = createTheme({
         fontWeight:'bold'
       },
     body1:{
-        fontFamily: 'CustomFont',
+        fontFamily: 'Lexend',
         // fontWeight:'bold'
     },
     body2:{
-        fontFamily: 'CustomFont',
+        fontFamily: 'Lexend',
         
         // fontWeight:'bold'
     },
     subtitle1:{
-        fontFamily: 'CustomFont',
+        fontFamily: 'Lexend',
         // fontWeight:'bold'
     },
     caption:{

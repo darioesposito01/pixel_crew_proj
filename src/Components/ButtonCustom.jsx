@@ -3,10 +3,8 @@ import React from "react";
 
 
 const ButtonCustom = ({children}) =>{
-
     return(
     <Button
-    
     sx={{
         backgroundColor:'rgba(209, 248,100,1)',
         ':hover':{
@@ -19,7 +17,7 @@ const ButtonCustom = ({children}) =>{
         textTransform:'none',
     }}
     >
-        <Typography sx={{fontWeight:'normal', fontSize:12}}>
+        <Typography sx={{fontWeight:'bold', fontSize:12}}>
         {children}
         </Typography>
     </Button>

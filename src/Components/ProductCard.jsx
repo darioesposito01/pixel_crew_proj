@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => (
         }}
       />
       <CardContent sx={{ px: 2, py: 0 }}>
-        <Typography sx={{ mb: 1, fontSize: 13 }} variant="h7" component="div">
+        <Typography sx={{ mb: 1, fontSize: 13, fontWeight:'bold' }} variant="h7" component="div">
           {product.name}
         </Typography>
         <ButtonCustom>
